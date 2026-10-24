@@ -130,14 +130,6 @@ I value continuous learning, practical problem-solving, clean code, and building
 
 ---
 
-## 📊 GitHub Activity
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Methmina1&show_icons=true&theme=github_dark&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Methmina1&layout=compact&theme=github_dark&hide_border=true)
-
----
-
 ## 📫 Let's Connect!
 
 I'm always interested in learning from other developers, discussing software engineering, and exploring internship or collaboration opportunities.
