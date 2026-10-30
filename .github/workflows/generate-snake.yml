@@ -1,0 +1,77 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main, improve-path]
+    paths:
+      - .github/workflows/generate-snake.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate animated SVG from Methmina1 contributions
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Methmina1
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=%2300FFD1&color_dots=%23000000,%23400554,%23693699,%237C40A9,%239570DD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # color_background is a GIF-only snk option, so add the SVG background here.
+      - name: Add dark background and verify output
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("dist/github-contribution-grid-snake.svg")
+          svg = path.read_text(encoding="utf-8")
+          opening = re.search(r"<svg\b[^>]*>", svg)
+          if opening is None:
+              raise SystemExit("The generator did not produce an SVG root element")
+
+          viewbox = re.search(r'\bviewBox="([^"]+)"', opening.group())
+          if viewbox is None:
+              raise SystemExit("The generated SVG has no viewBox")
+          x, y, width, height = viewbox.group(1).split()
+          background = (
+              f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
+              'fill="#0D1117"/>'
+          )
+          svg = svg[:opening.end()] + background + svg[opening.end():]
+          path.write_text(svg, encoding="utf-8")
+
+          colors = {
+              "--cs": "#00FFD1",
+              "--ce": "#000000",
+              "--c0": "#000000",
+              "--c1": "#400554",
+              "--c2": "#693699",
+              "--c3": "#7C40A9",
+              "--c4": "#9570DD",
+          }
+          for variable, color in colors.items():
+              if not re.search(
+                  rf"{re.escape(variable)}\s*:\s*{color}\b", svg, re.IGNORECASE
+              ):
+                  raise SystemExit(f"Missing expected SVG color: {variable}={color}")
+          if not re.search(r"<animate\b|<animateTransform\b|@keyframes", svg):
+              raise SystemExit("The generated SVG has no animation")
+          PY
+
+      - name: Publish SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
