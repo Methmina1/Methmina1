@@ -1,6 +1,11 @@
+
 # Hey there! I'm Methmina 👋
 
 ### 💻 Aspiring Software Engineer | Backend & Full-Stack Developer | AI Enthusiast
+
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="430" alt="Animated coding workspace" />
+</p>
 
 I'm a Software Engineering student from **Sri Lanka 🇱🇰**, currently completing my **Higher Diploma in Computing & Software Engineering**, with plans to pursue a **BSc (Hons) in Software Engineering**.
 
@@ -45,6 +50,7 @@ Currently, I'm **seeking a Software Engineering Internship** where I can contrib
 
 ### 🗄️ Databases
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Microsoft SQL Server](https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![H2](https://img.shields.io/badge/H2_Database-09476B?style=for-the-badge)
 
@@ -127,6 +133,14 @@ I'm particularly interested in internships and collaborative opportunities invol
 **Software Engineering • Backend Development • Full-Stack Development • AI/ML • FinTech**
 
 I value continuous learning, practical problem-solving, clean code, and building software that makes a meaningful impact.
+
+---
+
+## 🏙️ My 3D GitHub Contribution Calendar
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D GitHub contribution calendar" width="100%" />
+</p>
 
 ---
 
