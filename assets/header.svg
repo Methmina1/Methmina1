@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" role="img" aria-label="Methmina — Backend, Full-Stack, and AI developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1022"/>
+      <stop offset="0.56" stop-color="#111f3d"/>
+      <stop offset="1" stop-color="#0d3449"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#63a5ff"/>
+      <stop offset="1" stop-color="#72f0df"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#9cc4ff" stroke-opacity="0.085" stroke-width="1"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="310" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="310" fill="url(#bg)"/>
+    <rect width="1200" height="310" fill="url(#grid)"/>
+    <circle cx="1140" cy="-20" r="238" fill="#3f7dff" opacity="0.09"/>
+    <circle cx="1080" cy="325" r="160" fill="#3ae9d3" opacity="0.08"/>
+    <rect x="68" y="59" width="40" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="68" y="124" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="2">METHMINA</text>
+    <text x="69" y="163" fill="#c3d3e9" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" letter-spacing="0.8">SOFTWARE ENGINEERING STUDENT</text>
+    <text x="69" y="196" fill="#81dbe4" font-family="Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="0.5">Backend Engineering  /  Full-Stack  /  Applied AI</text>
+    <rect x="69" y="232" width="249" height="40" rx="20" fill="#1b3656" stroke="#3b6289" stroke-width="1"/>
+    <circle cx="91" cy="252" r="5" fill="#44d6a4"/>
+    <text x="109" y="258" fill="#e9f6ff" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">Open to internships</text>
+
+    <rect x="775" y="43" width="360" height="226" rx="14" fill="#0a1326" stroke="#456584" stroke-width="1.5"/>
+    <rect x="775" y="43" width="360" height="37" rx="14" fill="#1a2b43"/>
+    <rect x="775" y="66" width="360" height="14" fill="#1a2b43"/>
+    <circle cx="801" cy="62" r="5" fill="#f87171"/>
+    <circle cx="818" cy="62" r="5" fill="#fbbf24"/>
+    <circle cx="835" cy="62" r="5" fill="#34d399"/>
+    <text x="958" y="67" text-anchor="middle" fill="#9fb8d3" font-family="Consolas, monospace" font-size="12">developer.ts</text>
+    <g font-family="Consolas, monospace" font-size="17">
+      <text x="802" y="115" fill="#8ca5bc">01</text>
+      <text x="844" y="115" fill="#8dd6ff">const</text>
+      <text x="902" y="115" fill="#e7effa">focus = {</text>
+      <text x="802" y="146" fill="#8ca5bc">02</text>
+      <text x="865" y="146" fill="#a9de9c">backend:</text>
+      <text x="952" y="146" fill="#f3c57f">'Spring Boot'</text>
+      <text x="802" y="177" fill="#8ca5bc">03</text>
+      <text x="865" y="177" fill="#a9de9c">build:</text>
+      <text x="932" y="177" fill="#f3c57f">'Full-stack'</text>
+      <text x="802" y="208" fill="#8ca5bc">04</text>
+      <text x="865" y="208" fill="#a9de9c">explore:</text>
+      <text x="954" y="208" fill="#f3c57f">'AI / ML'</text>
+      <text x="802" y="239" fill="#8ca5bc">05</text>
+      <text x="845" y="239" fill="#e7effa">};</text>
+    </g>
+    <path d="M 68 286 H 1130" stroke="#8caad0" stroke-opacity="0.16"/>
+  </g>
+</svg>
