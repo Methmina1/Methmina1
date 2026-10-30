@@ -25,10 +25,6 @@ I enjoy building backend services, connecting systems end to end, and exploring 
 > **Currently building:** backend systems, full-stack apps, and AI-powered projects<br />
 > **Currently learning:** system design, testing, architecture, and DevOps
 
-<p align="center">
-  <img src="https://res.cloudinary.com/superfolio/image/upload/v1620689979/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f63362f33332f63322f63363333633230656465383266306530636564376435373064626533613166332e676966_yjuh2s.gif" alt="Animated coding workspace" width="360" />
-</p>
-
 ## Featured projects
 
 ### [StockPilot ↗](https://github.com/Methmina1/Stock-Pilot)
@@ -102,6 +98,10 @@ A project exploring how LLMs and intelligent workflows can support HR processes 
 ## Connect
 
 I'm open to software engineering internships and collaborative projects. The best place to reach me is [GitHub @Methmina1](https://github.com/Methmina1).
+
+<p align="center">
+  <img src="https://res.cloudinary.com/superfolio/image/upload/v1620689979/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f63362f33332f63322f63363333633230656465383266306530636564376435373064626533613166332e676966_yjuh2s.gif" alt="Animated coding workspace" width="220" />
+</p>
 
 ---
 
