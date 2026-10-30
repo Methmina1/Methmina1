@@ -21,7 +21,7 @@ jobs:
         with:
           github_user_name: Methmina1
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%2300FFD1&color_dots=%23000000,%23400554,%23693699,%237C40A9,%239570DD
+            dist/github-contribution-grid-snake.svg?palette=github-dark&color_snake=%23FF0000
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -49,20 +49,11 @@ jobs:
           svg = svg[:opening.end()] + background + svg[opening.end():]
           path.write_text(svg, encoding="utf-8")
 
-          colors = {
-              "--cs": "#00FFD1",
-              "--ce": "#000000",
-              "--c0": "#000000",
-              "--c1": "#400554",
-              "--c2": "#693699",
-              "--c3": "#7C40A9",
-              "--c4": "#9570DD",
-          }
-          for variable, color in colors.items():
-              if not re.search(
-                  rf"{re.escape(variable)}\s*:\s*{color}\b", svg, re.IGNORECASE
-              ):
-                  raise SystemExit(f"Missing expected SVG color: {variable}={color}")
+          if not re.search(r"--cs\s*:\s*#FF0000\b", svg, re.IGNORECASE):
+              raise SystemExit("The red snake color is missing from the SVG")
+          for color in ("#400554", "#693699", "#7C40A9", "#9570DD"):
+              if color.lower() in svg.lower():
+                  raise SystemExit(f"An old purple contribution color remains: {color}")
           if not re.search(r"<animate\b|<animateTransform\b|@keyframes", svg):
               raise SystemExit("The generated SVG has no animation")
           PY
