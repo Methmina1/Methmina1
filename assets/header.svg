@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Methmina — software engineering student</title>
+  <desc id="desc">A dark blue banner with a connected diagram for backend, full-stack, and AI work.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1324"/>
+      <stop offset=".58" stop-color="#10243A"/>
+      <stop offset="1" stop-color="#123B48"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#70A8FF"/>
+      <stop offset="1" stop-color="#75E4D3"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#BDD9F4" stroke-opacity=".07"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#background)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <circle cx="1100" cy="-36" r="230" fill="#6DA7FF" opacity=".07"/>
+    <circle cx="940" cy="346" r="210" fill="#75E4D3" opacity=".06"/>
+    <path d="M64 54H1128" stroke="#9BC8DC" stroke-opacity=".17"/>
+    <path d="M64 278H1128" stroke="#9BC8DC" stroke-opacity=".17"/>
+
+    <rect x="64" y="72" width="5" height="153" rx="2.5" fill="url(#accent)"/>
+    <text x="88" y="91" fill="#75E4D3" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">HELLO, I'M</text>
+    <text x="85" y="163" fill="#F5FAFF" font-family="Segoe UI, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="1.5">METHMINA</text>
+    <text x="88" y="202" fill="#D6E6F5" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="500">Software engineering student</text>
+    <text x="88" y="238" fill="#8EB4CD" font-family="Segoe UI, Arial, sans-serif" font-size="17">Sri Lanka  ·  Open to internships</text>
+
+    <rect x="742" y="70" width="390" height="185" rx="16" fill="#0A182B" stroke="#53728B" stroke-opacity=".72"/>
+    <text x="766" y="100" fill="#96B8D2" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">WHAT I BUILD</text>
+    <path d="M786 132V220" stroke="url(#accent)" stroke-width="2" opacity=".75"/>
+    <circle cx="786" cy="135" r="6" fill="#75E4D3"/>
+    <circle cx="786" cy="176" r="6" fill="#75E4D3"/>
+    <circle cx="786" cy="217" r="6" fill="#75E4D3"/>
+    <text x="808" y="141" fill="#F2F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Backend systems</text>
+    <text x="808" y="182" fill="#F2F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Full-stack products</text>
+    <text x="808" y="223" fill="#F2F8FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Applied AI</text>
+
+    <text x="64" y="300" fill="#88A9C1" font-family="Consolas, monospace" font-size="11" letter-spacing="1">BUILD  /  LEARN  /  IMPROVE</text>
+    <path d="M1040 291H1128" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
