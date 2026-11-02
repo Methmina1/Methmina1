@@ -9,7 +9,6 @@
     <a href="#about">About</a> ·
     <a href="#featured-projects">Projects</a> ·
     <a href="#tech-stack">Tech stack</a> ·
-    <a href="#github-activity">Activity</a> ·
     <a href="#connect">Connect</a>
   </p>
 </div>
@@ -42,17 +41,27 @@ A financial analytics app that brings market visualizations, machine learning pr
 
 ---
 
-### Nova AI
+### PrathibhaLanka
 
-**AI-assisted HR and project management** · Full-stack exploration
+**Travel agency platform** · Client project · [Frontend](https://github.com/Methmina1/Prathiba-Lanka-Frontend-v2) · [Backend](https://github.com/Methmina1/Prathiba-Lanka-v2)
 
-A project exploring how LLMs and intelligent workflows can support HR processes and project management.
+A full-stack site for a Sri Lankan travel agency, with a React frontend and a Spring Boot backend.
 
-- Explore agent and workflow orchestration with LangChain and LangGraph.
-- Integrate LLM capabilities through the DeepSeek API.
-- Build the application with the MERN stack.
+- Browse journeys, destinations, journal stories, and photo galleries.
+- Request bookings, track them by PIN, and submit reviews and enquiries.
+- Manage packages, bookings, enquiries, media, and site content through a staff console.
 
-`MongoDB` · `Express.js` · `React` · `Node.js` · `LangChain` · `LangGraph`
+`React` · `Vite` · `Java` · `Spring Boot` · `PostgreSQL` · `JWT`
+
+---
+
+### [HotMello](https://github.com/Methmina1/HotMello)
+
+**Studio services and equipment rentals** · Full-stack project
+
+A studio website with service bookings, equipment rentals, contact enquiries, and an admin dashboard.
+
+`React` · `Vite` · `Express.js` · `MongoDB`
 
 ## Tech stack
 
@@ -112,16 +121,6 @@ A project exploring how LLMs and intelligent workflows can support HR processes 
 - **Backend & architecture:** REST API design, authentication, database integration, SOLID, and system design.
 - **AI & data:** predictive modeling, explainable AI, and intelligent workflows.
 - **Software craftsmanship:** testing, maintainability, Git workflows, Docker, and CI/CD fundamentals.
-
-## GitHub activity
-
-<div align="center">
-  <img
-    src="https://raw.githubusercontent.com/Methmina1/Methmina1/output/github-contribution-grid-snake.svg"
-    alt="Animated GitHub contribution snake"
-    width="100%"
-  />
-</div>
 
 ## Connect
 
