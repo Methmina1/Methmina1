@@ -26,7 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # color_background is a GIF-only snk option, so add the SVG background here.
-      - name: Add dark background and verify output
+      - name: Keep contribution cells visible and verify output
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -34,6 +34,19 @@ jobs:
 
           path = Path("dist/github-contribution-grid-snake.svg")
           svg = path.read_text(encoding="utf-8")
+
+          # snk normally turns a contribution cell into an empty cell after
+          # the snake passes it. Keep the calendar accurate throughout the loop.
+          svg, preserved_cells = re.subn(
+              r"(\.c\.c[0-9a-z]+\{fill:var\(--c[1-4]\);)animation-name:c[0-9a-z]+(?=\})",
+              r"\1",
+              svg,
+          )
+          if preserved_cells == 0 or re.search(
+              r"\.c\.c[0-9a-z]+\{[^}]*animation-name:", svg
+          ):
+              raise SystemExit("Contribution cells still disappear during animation")
+
           opening = re.search(r"<svg\b[^>]*>", svg)
           if opening is None:
               raise SystemExit("The generator did not produce an SVG root element")
@@ -54,8 +67,8 @@ jobs:
           for color in ("#400554", "#693699", "#7C40A9", "#9570DD"):
               if color.lower() in svg.lower():
                   raise SystemExit(f"An old purple contribution color remains: {color}")
-          if not re.search(r"<animate\b|<animateTransform\b|@keyframes", svg):
-              raise SystemExit("The generated SVG has no animation")
+          if not re.search(r"\.s\.s[0-9a-z]+\{[^}]*animation-name:s[0-9a-z]+", svg):
+              raise SystemExit("The generated SVG has no snake animation")
           PY
 
       - name: Publish SVG to output branch
